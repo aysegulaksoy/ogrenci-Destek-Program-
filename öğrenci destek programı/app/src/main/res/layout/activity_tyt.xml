@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tyt"
+    >
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#60EA80FC">
+
+            <TextView
+                android:id="@+id/turkce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Türkçe: " />
+
+            <EditText
+                android:id="@+id/turkcedogru"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Doğru"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/turkceyanlis"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Yanlış"
+                android:inputType="number" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A8B388FF">
+
+            <TextView
+                android:id="@+id/fen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fen Bilimleri: " />
+
+            <EditText
+                android:id="@+id/fendogru"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Doğru"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/fenyanlis"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Yanlış"
+                android:inputType="number" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#60EA80FC">
+            <TextView
+                android:id="@+id/matematik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Temel Matematik: "
+             />
+
+            <EditText
+                android:id="@+id/matdogru"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:hint="Doğru"
+                />
+
+            <EditText
+                android:id="@+id/matyanlis"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Yanlış"
+                android:ems="10"
+                android:inputType="number"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A8B388FF">
+            <TextView
+                android:id="@+id/sosyal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sosyal Bilimler: " />
+
+            <EditText
+                android:id="@+id/sosyaldogru"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:hint="Doğru"
+              />
+
+            <EditText
+                android:id="@+id/sosyalyanlis"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Yanlış"
+                android:ems="10"
+                android:inputType="number"
+                 />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/hesapla"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Toplam AYT netlerini hesapla"
+        app:backgroundTint="#EA80FC" />
+
+    <TextView
+        android:id="@+id/sonuc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hesapla"
+        android:text="..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="24dp" />
+
+</RelativeLayout>

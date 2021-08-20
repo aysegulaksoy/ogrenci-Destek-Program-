@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ayt"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table"
+        >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#52B9F6CA">
+
+            <TextView
+                android:id="@+id/edebiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Türk Dili ve Edebiyatı: " />
+
+
+            <EditText
+                android:id="@+id/edebiyatdogru"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Doğru"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edebiyatyanlis"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Yanlış"
+                android:inputType="number" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B9F6CA">
+
+
+            <TextView
+                android:id="@+id/tarih1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tarih-1: " />
+
+            <EditText
+                android:id="@+id/tarih1dogru"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Doğru"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/tarih1yanlis"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Yanlış"
+                android:inputType="number" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#52B9F6CA"
+            >
+
+
+
+                <TextView
+                    android:id="@+id/cografya1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Coğrafya-1: " />
+
+                <EditText
+                    android:id="@+id/corafya1dogru"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Doğru"
+                    android:inputType="number"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/cografya1yanlis"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Yanlış"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B9F6CA"
+            >
+
+            <TextView
+                android:id="@+id/tarih2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tarih-2: "
+                />
+
+            <EditText
+                android:id="@+id/tarih2dogru"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Doğru"
+                android:inputType="number"
+                android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/tarih2yanlis"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Yanlış"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#52B9F6CA">
+
+                <TextView
+                    android:id="@+id/cografya2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Coğrafya-2: " />
+
+                <EditText
+                    android:id="@+id/cografya2dogru"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Doğru"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/cografya2yanlis"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Yanlış"
+                android:inputType="number"
+                android:gravity="center"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B9F6CA">
+
+                <TextView
+                    android:id="@+id/felsefe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Felsefe Grubu: " />
+
+                <EditText
+                    android:id="@+id/felsefedogru"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Doğru"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/felsefeyanlis"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Yanlış"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#52B9F6CA">
+
+                <TextView
+                    android:id="@+id/din"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Din Kültürü: " />
+
+                <EditText
+                    android:id="@+id/dindogru"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Doğru"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/dinyanlis"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Yanlış"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B9F6CA">
+
+                <TextView
+                    android:id="@+id/matematik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Matematik: "
+                    />
+
+                <EditText
+                    android:id="@+id/matdogru"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Doğru"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/matyanlis"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Yanlış"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#52B9F6CA">
+
+                <TextView
+                    android:id="@+id/fizik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fizik: " />
+
+                <EditText
+                    android:id="@+id/fizikdogru"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Doğru"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/fizikyanlis"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Yanlış"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B9F6CA">
+
+
+                <TextView
+                    android:id="@+id/kimya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kimya: " />
+
+                <EditText
+                    android:id="@+id/kimyadogru"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Doğru"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/kimyayanlis"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Yanlış"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#52B9F6CA">
+
+
+            <TextView
+                android:id="@+id/biyoloji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Biyoloji: " />
+
+            <EditText
+                android:id="@+id/biyolojidogru"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Doğru"
+                android:inputType="number"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/biyolojiyanlis"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Yanlış"
+                android:inputType="number"
+                android:gravity="center"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B9F6CA">
+
+
+            <TextView
+                android:id="@+id/dil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dil: " />
+
+            <EditText
+                android:id="@+id/dildogru"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Doğru"
+                android:inputType="number"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/dilyanlis"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Yanlış"
+                android:inputType="number"
+                android:gravity="center"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/hesapla"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Toplam AYT netlerini hesapla"
+        app:backgroundTint="#A3E4A6"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/table"
+        android:layout_margin="20dp"
+        />
+
+            <TextView
+                android:id="@+id/sonuc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="..."
+                android:textSize="24dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Main">
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#46FFD180"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/sand" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Widget.MaterialComponents.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="20sp"
+            android:text="Sınava "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Widget.MaterialComponents.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="24sp"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Widget.MaterialComponents.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="20sp"
+            android:text="  Gün Kaldı"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="20sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay1"
+        android:background="#77FF9E80">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/Widget.MaterialComponents.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:text=" motivasyon"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            app:srcCompat="@drawable/target" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay2"
+        android:background="#6180D8FF">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/keys" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ayt"
+                style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tyt"
+                android:onClick="hesapla"
+                android:text="AYT puanını hesapla"
+                android:textColor="#9A8B8B"
+                android:textSize="20sp"
+                app:backgroundTint="#01CDBA" />
+
+            <Button
+                android:id="@+id/tyt"
+                style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:onClick="hesapla"
+                android:text="TYT puanını hesapla"
+                android:textColor="#9A8B8B"
+                android:textSize="20sp"
+                app:backgroundTint="#01CDBA" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay3"
+        android:orientation="vertical">
+
+
+        />
+
+        <LinearLayout
+            android:id="@+id/lay5"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#4BB388FF"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etkinlik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:hint="etkinlik ekleyin"
+                android:inputType="textPersonName"
+                android:textColorHint="#CB393636" />
+
+            <Button
+                android:id="@+id/datepicker"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Plan ekle"
+                app:backgroundTint="#B388FF" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay5"
+            android:background="#52E9FF00"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/calendar" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="10dp"
+                android:text="Kaydedilmiş etkinliklerini gör"
+                app:backgroundTint="#FF9E80" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imageView5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text=" "/>
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
